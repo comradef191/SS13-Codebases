@@ -20,22 +20,22 @@ digraph G {
 			compound = false
 			rank     = same
 
-			node [
+			node[
 				shape    = rectangle,
 				fontsize = 14,
 				minlen = 1
 			]
-			edge [
+			edge[
 				constraint = false
 			]
 
 			// Notes
-			note1 [
+			note1[
 				label  = "Red arrows indicate that the child is not a fork of a parent, rather a new version or rebrand.\l",
 				width  = 4.5,
 				height = .8
 			]
-			note2 [
+			note2[
 				label  = < <b><u><font color="blue">GitHub source <br align="center"/>repository</font></u></b> >,
 				URL    = "https://github.com/spacestation13/SS13-Codebases",
 				width  = 1.5,
@@ -49,11 +49,11 @@ digraph G {
 			label    = "Non-SS13 Derived Codebases"
 			style    = "dotted"
 
-			node [
+			node[
 				shape    = rectangle,
 				minlen   = 1
 			]
-			edge [
+			edge[
 				constraint = false
 			]
 
@@ -73,11 +73,11 @@ digraph G {
 		labelloc = "top"
 
 		// Root codebases
-		"Goonstation" [shape = rectangle, color = blue]
-		"/tg/Station (GPLv3)" [shape = rectangle, color = blue]
-		"/tg/Station (AGPL)" [shape = rectangle, color = blue]
-		"BayStation (GPL)" [shape = rectangle, color = blue]
-		"BayStation (AGPL)" [shape = rectangle, color = blue]
+		"Goonstation"[shape = rectangle, color = blue]
+		"/tg/Station (GPLv3)"[shape = rectangle, color = blue]
+		"/tg/Station (AGPL)"[shape = rectangle, color = blue]
+		"BayStation (GPL)"[shape = rectangle, color = blue]
+		"BayStation (AGPL)"[shape = rectangle, color = blue]
 
 		// Edges
 		"/tg/Station (AGPL)"            -> "Sigma"
@@ -98,7 +98,7 @@ digraph G {
 		"/tg/Station (AGPL)"            -> "YogStation"
 		"/tg/Station (AGPL)"            -> "Fulpstation"
 		"/tg/Station (GPLv3)"           -> "FreeTG Station"
-		"/tg/Station (GPLv3)"           -> "/tg/Station (AGPL)" [color = red]
+		"/tg/Station (GPLv3)"           -> "/tg/Station (AGPL)"[color = red]
 		"/tg/Station (GPLv3)"           -> "Archangel"
 		"/tg/Station (GPLv3)"           -> "BayStation (GPL)"
 		"/tg/Station (GPLv3)"           -> "FacePunch"
@@ -113,17 +113,17 @@ digraph G {
 		"/vg/Station"                   -> "Green (/vg/)"
 		"/vg/Station"                   -> "Orange SS13"
 		"/vg/Station"                   -> "Indigo Special"
-		"AEIOU"                         -> "Eclipse Station" [color = red]
+		"AEIOU"                         -> "Eclipse Station"[color = red]
 		"Animus (AGPL)"                 -> "Blue Admiralty Torch"
 		"Animus (AGPL)"                 -> "Chaotic Onyx"
 		"Animus (AGPL)"                 -> "Yellow"
-		"Animus (GPL)"                  -> "Animus (AGPL)" [color = red]
+		"Animus (GPL)"                  -> "Animus (AGPL)"[color = red]
 		"Animus (GPL)"                  -> "Hot Blue"
 		"Animus (GPL)"                  -> "Old Blue Bay"
 		"Animus (GPL)"                  -> "Yellow (Old)"
-		"Aurora (Old)"                  -> "Aurora Station" [color = red]
+		"Aurora (Old)"                  -> "Aurora Station"[color = red]
 		"Ava's Battlegrounds (IS2)"     -> "No Mans's Land"
-		"Ava's Battlegrounds (IS2)"     -> "Ava's Battlegrounds (Prishtina)" [color = red]
+		"Ava's Battlegrounds (IS2)"     -> "Ava's Battlegrounds (Prishtina)"[color = red]
 		"BayStation (AGPL)"             -> "Aurora Station"
 		"BayStation (AGPL)"             -> "Apollo Station"
 		"BayStation (AGPL)"             -> "Animus (AGPL)"
@@ -145,7 +145,7 @@ digraph G {
 		"BayStation (GPL)"              -> "/vg/Station"
 		"BayStation (GPL)"              -> "Animus (GPL)"
 		"BayStation (GPL)"              -> "Aurora (Old)"
-		"BayStation (GPL)"              -> "BayStation (AGPL)" [color = red]
+		"BayStation (GPL)"              -> "BayStation (AGPL)"[color = red]
 		"BayStation (GPL)"              -> "Black Tyranny"
 		"BayStation (GPL)"              -> "BestRP"
 		"BayStation (GPL)"              -> "Colonial Marines"
@@ -161,39 +161,39 @@ digraph G {
 		"BestRP"                        -> "Unbound Travels"
 		"Blue Admiralty Torch"          -> "Iron Space Torch"
 		"Black Tyranny"                 -> "ME Station"
-		"Boomer Station"                -> "White Sands" [color = red]
+		"Boomer Station"                -> "White Sands"[color = red]
 		"CEV Eris"                      -> "NEV Northern Light"
 		"CEV Eris"                      -> "InterStation-Two"
 		"CEV Eris"                      -> "Soujurn Station"
 		"Citadel Main"                  -> "HyperStation"
 		"Citadel Main"                  -> "Skyrat 13 (Old)"
-		"Skyrat 13 (Old)"				-> "Skyrat Main" [color = red]
+		"Skyrat 13 (Old)"				-> "Skyrat Main"[color = red]
 		"/tg/Station (AGPL)"			-> "Skyrat Main"
 		"Skyrat Main"					-> "Tannhauser Gate"
 		"Skyrat Main"					-> "Nebula Station 13"
 		"Skyrat Main"					-> "Fluffy Frontier"
 		"Colonial Marines"              -> "DM;CA"
-		"DM;CA"                         -> "TerraGov Marine Corps (TGMC)" [color = red]
-		"Euphoria"                      -> "Space Station V" [color = red]
+		"DM;CA"                         -> "TerraGov Marine Corps (TGMC)"[color = red]
+		"Euphoria"                      -> "Space Station V"[color = red]
 		"Eclipse Station"               -> "Sygyzy Station"
 		"FacePunch"                     -> "Corporate Mercenaries"
 		"Fernflower"                    -> "Lawful Green"
 		"Fallout 13"                    -> "Desert Rose"
-		"Fallout 13 (Old)"              -> "Fallout 13" [color = red]
+		"Fallout 13 (Old)"              -> "Fallout 13"[color = red]
 		"Fallout 13 (Old)"              -> "WASTELANDS: Lost Day"
 		"Goonstation (Open Source)"     -> "BeeStation Clover"
-		"Goonstation"                   -> "Goon 2009 Public SVN" [color = red]
-		"Goonstation"                   -> "Goon 2016 Release" [color = red]
-		"Goonstation"                   -> "Goonstation (Open Source)" [color = red]
-		"Goonstation"                   -> "Revision 4407 (r4407)" [color = red]
+		"Goonstation"                   -> "Goon 2009 Public SVN"[color = red]
+		"Goonstation"                   -> "Goon 2016 Release"[color = red]
+		"Goonstation"                   -> "Goonstation (Open Source)"[color = red]
+		"Goonstation"                   -> "Revision 4407 (r4407)"[color = red]
 		"Goon 2009 Public SVN"          -> "BayStation (Pre-r4407)"
 		"Goon 2009 Public SVN"          -> "Vagabond Station 13"
-		"Goon 2016 Release"             -> "Goon 2020 Release" [color = red]
+		"Goon 2016 Release"             -> "Goon 2020 Release"[color = red]
 		"Goon 2016 Release"             -> "T/Goonstation"
-		"Green (/vg/)"                  -> "Green (Orange)" [color = red]
+		"Green (/vg/)"                  -> "Green (Orange)"[color = red]
 		"Green (Orange)"                -> "Sosaki"
 		"Hestia (Old)"                  -> "Vestia"
-		"Hestia (Old)"                  -> "Hestia" [color = red]
+		"Hestia (Old)"                  -> "Hestia"[color = red]
 		"Interbay"                      -> "Cadia Station"
 		"Interbay"                      -> "Samosbor 13"
 		"Interbay"                      -> "Interpost Hague"
@@ -204,7 +204,7 @@ digraph G {
 		"Nebula"                        -> "Argos"
 		"Nebula"                        -> "Hestia"
 		"No Mans's Land"                -> "Lebensraum"
-		"November"                      -> "Lifeweb" [color = red]
+		"November"                      -> "Lifeweb"[color = red]
 		"NTStation"                     -> "D20 Station"
 		"NTStation"                     -> "Animus (NT)"
 		"Sygyzy Station"                -> "Occulus"
@@ -218,22 +218,169 @@ digraph G {
 		"Revision 4407 (r4407)"         -> "D2K5"
 		"Revision 4407 (r4407)"         -> "Mars Station 42"
 		"Soujurn Station"               -> "Navarro"
-		"Space Station V"               -> "November" [color = red]
-		"SS13 (Pre Open)"               -> "Goonstation" [label = "Gibbed's Decompilation"]
-		"SS13 (Pre Open)"               -> "OpenSS13" [label = "Hobnob's Decompilation"]
+		"Space Station V"               -> "November"[color = red]
+		"SS13 (Pre Open)"               -> "Goonstation"[label = "Gibbed's Decompilation"]
+		"SS13 (Pre Open)"               -> "OpenSS13"[label = "Hobnob's Decompilation"]
 		"Stalker Project"               -> "Ashen Sky"
-		"Star Trek 13"                  -> "Deep Space 13" [color = red]
-		"Tegustation (Old)"             -> "Tegustation" [color = red]
+		"Star Trek 13"                  -> "Deep Space 13"[color = red]
+		"Tegustation (Old)"             -> "Tegustation"[color = red]
 		"Unbound Travels"               -> "Aphelion Project"
 		"Urist McStation"               -> "Haven-13"
 		"V.O.R.E. Station"              -> "AEIOU"
 		"V.O.R.E. Station"              -> "Citadel RP"
 		"V.O.R.E. Station"              -> "Yawn Wider"
-		"WaspStation"                   -> "Boomer Station" [color = red]
-		"White Dream"                   -> "White Bay" [color = red]
+		"WaspStation"                   -> "Boomer Station"[color = red]
+		"White Dream"                   -> "White Bay"[color = red]
 		"White Sands"                   -> "Shiptest"
 		"Yawn Wider"                    -> "CHOMPstation"
-		"Yellow (Old)"                  -> "Yellow" [color = red]
+		"Yellow (Old)"                  -> "Yellow"[color = red]
+
+		// Repository links
+		"/tg/Station (AGPL)"						[URL = "https://foo.bar.example/codecraphere"]
+		"/tg/Station (GPLv3)"						[URL = "https://foo.bar.example/codecraphere"]
+		"/vg/Station"								[URL = "https://foo.bar.example/codecraphere"]
+		"AEIOU"						 				[URL = "https://foo.bar.example/codecraphere"]
+		"Animus (AGPL)"								[URL = "https://foo.bar.example/codecraphere"]
+		"Animus (GPL)"								[URL = "https://foo.bar.example/codecraphere"]
+		"Animus (NT)"								[URL = "https://foo.bar.example/codecraphere"]
+		"Aphelion Project"							[URL = "https://foo.bar.example/codecraphere"]
+		"Apollo Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Apollo Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Archangel"						 			[URL = "https://foo.bar.example/codecraphere"]
+		"Argos"						 				[URL = "https://foo.bar.example/codecraphere"]
+		"Ashen Sky"						 			[URL = "https://foo.bar.example/codecraphere"]
+		"Aurora (Old)"								[URL = "https://foo.bar.example/codecraphere"]
+		"Aurora Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Aurora Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Austation"									[URL = "https://foo.bar.example/codecraphere"]
+		"Ava's Battlegrounds (IS2)"					[URL = "https://foo.bar.example/codecraphere"]
+		"Ava's Battlegrounds (Prishtina)"			[URL = "https://foo.bar.example/codecraphere"]
+		"BayStation (AGPL)"							[URL = "https://foo.bar.example/codecraphere"]
+		"BayStation (GPL)"							[URL = "https://foo.bar.example/codecraphere"]
+		"BayStation (Luna)"							[URL = "https://foo.bar.example/codecraphere"]
+		"BayStation (Pre-r4407)"					[URL = "https://foo.bar.example/codecraphere"]
+		"BeeStation"								[URL = "https://foo.bar.example/codecraphere"]
+		"BeeStation Clover"							[URL = "https://foo.bar.example/codecraphere"]
+		"BestRP"						 			[URL = "https://foo.bar.example/codecraphere"]
+		"Black Tyranny"								[URL = "https://foo.bar.example/codecraphere"]
+		"Blue Admiralty Torch"						[URL = "https://foo.bar.example/codecraphere"]
+		"Boomer Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Boomer Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"CEV Eris"						 			[URL = "https://foo.bar.example/codecraphere"]
+		"CHOMPstation"								[URL = "https://foo.bar.example/codecraphere"]
+		"Cadia Station"								[URL = "https://foo.bar.example/codecraphere"]
+		"Chaotic Onyx"								[URL = "https://foo.bar.example/codecraphere"]
+		"Citadel RP"								[URL = "https://foo.bar.example/codecraphere"]
+		"Citadel Main"								[URL = "https://foo.bar.example/codecraphere"]
+		"Civilization 13"							[URL = "https://foo.bar.example/codecraphere"]
+		"Colonial Marines"							[URL = "https://foo.bar.example/codecraphere"]
+		"Corporate Mercenaries"						[URL = "https://foo.bar.example/codecraphere"]
+		"D20 Station"								[URL = "https://foo.bar.example/codecraphere"]
+		"D2K5"										[URL = "https://foo.bar.example/codecraphere"]
+		"DM;CA"										[URL = "https://foo.bar.example/codecraphere"]
+		"Dead Space 13"								[URL = "https://foo.bar.example/codecraphere"]
+		"Deep Space 13"								[URL = "https://foo.bar.example/codecraphere"]
+		"Desert Rose"								[URL = "https://foo.bar.example/codecraphere"]
+		"Eclipse Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Escalation 1984"							[URL = "https://foo.bar.example/codecraphere"]
+		"Euphoria"									[URL = "https://foo.bar.example/codecraphere"]
+		"Europa Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"FTL13"										[URL = "https://foo.bar.example/codecraphere"]
+		"FTL13 (Old)"								[URL = "https://foo.bar.example/codecraphere"]
+		"FacePunch"									[URL = "https://foo.bar.example/codecraphere"]
+		"Fallout 13"								[URL = "https://foo.bar.example/codecraphere"]
+		"Fallout 13 (Old)"							[URL = "https://foo.bar.example/codecraphere"]
+		"Fernflower"								[URL = "https://foo.bar.example/codecraphere"]
+		"Fluffy Frontier"							[URL = "https://foo.bar.example/codecraphere"]
+		"FreeTG Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Fulpstation"								[URL = "https://foo.bar.example/codecraphere"]
+		"Goon 2009 Public SVN"						[URL = "https://foo.bar.example/codecraphere"]
+		"Goon 2016 Release"							[URL = "https://foo.bar.example/codecraphere"]
+		"Goon 2020 Release"							[URL = "https://foo.bar.example/codecraphere"]
+		"Goonstation (Open Source)"					[URL = "https://foo.bar.example/codecraphere"]
+		"Revision 4407 (r4407)"						[URL = "https://foo.bar.example/codecraphere"]
+		"Green (/vg/)"								[URL = "https://foo.bar.example/codecraphere"]
+		"Green (Orange)"							[URL = "https://foo.bar.example/codecraphere"]
+		"Halo: Space Station Evolved"				[URL = "https://foo.bar.example/codecraphere"]
+		"Haven-13"									[URL = "https://foo.bar.example/codecraphere"]
+		"Hestia"									[URL = "https://foo.bar.example/codecraphere"]
+		"Hestia (Old)"								[URL = "https://foo.bar.example/codecraphere"]
+		"HippieStation"								[URL = "https://foo.bar.example/codecraphere"]
+		"HippieStation (Old)"						[URL = "https://foo.bar.example/codecraphere"]
+		"Hot Blue"									[URL = "https://foo.bar.example/codecraphere"]
+		"Hypatia"									[URL = "https://foo.bar.example/codecraphere"]
+		"HyperStation"								[URL = "https://foo.bar.example/codecraphere"]
+		"Indigo Special"							[URL = "https://foo.bar.example/codecraphere"]
+		"Interbay"									[URL = "https://foo.bar.example/codecraphere"]
+		"Interpost Hague"							[URL = "https://foo.bar.example/codecraphere"]
+		"Interpost: Redux"							[URL = "https://foo.bar.example/codecraphere"]
+		"InterStation-Two"							[URL = "https://foo.bar.example/codecraphere"]
+		"Iron Space Torch"							[URL = "https://foo.bar.example/codecraphere"]
+		"Lawful Green"								[URL = "https://foo.bar.example/codecraphere"]
+		"Lebensraum"								[URL = "https://foo.bar.example/codecraphere"]
+		"Lifeweb"									[URL = "https://foo.bar.example/codecraphere"]
+		"ME Station"								[URL = "https://foo.bar.example/codecraphere"]
+		"Mars Station 42"							[URL = "https://foo.bar.example/codecraphere"]
+		"Mojave Sun"								[URL = "https://foo.bar.example/codecraphere"]
+		"NEV Northern Light"						[URL = "https://foo.bar.example/codecraphere"]
+		"NSV13"										[URL = "https://foo.bar.example/codecraphere"]
+		"NTStation"									[URL = "https://foo.bar.example/codecraphere"]
+		"Navarro"									[URL = "https://foo.bar.example/codecraphere"]
+		"Nebula"									[URL = "https://foo.bar.example/codecraphere"]
+		"Nebula Station 13"							[URL = "https://foo.bar.example/codecraphere"]
+		"New Eden"									[URL = "https://foo.bar.example/codecraphere"]
+		"No Mans's Land"							[URL = "https://foo.bar.example/codecraphere"]
+		"November"									[URL = "https://foo.bar.example/codecraphere"]
+		"Occulus"									[URL = "https://foo.bar.example/codecraphere"]
+		"Old Blue Bay"								[URL = "https://foo.bar.example/codecraphere"]
+		"OpenSS13"									[URL = "https://foo.bar.example/codecraphere"]
+		"OracleStation"								[URL = "https://foo.bar.example/codecraphere"]
+		"Orange SS13"								[URL = "https://foo.bar.example/codecraphere"]
+		"Paradise"									[URL = "https://foo.bar.example/codecraphere"]
+		"Persistence (New)"							[URL = "https://foo.bar.example/codecraphere"]
+		"Persistence SS13 (Old)"					[URL = "https://foo.bar.example/codecraphere"]
+		"Polaris"									[URL = "https://foo.bar.example/codecraphere"]
+		"Prishtina"									[URL = "https://foo.bar.example/codecraphere"]
+		"Project Misery"							[URL = "https://foo.bar.example/codecraphere"]
+		"RocketStation42"							[URL = "https://foo.bar.example/codecraphere"]
+		"SCP-13"									[URL = "https://foo.bar.example/codecraphere"]
+		"SS13 (Pre Open)"							[URL = "https://foo.bar.example/codecraphere"]
+		"Samosbor 13"								[URL = "https://foo.bar.example/codecraphere"]
+		"Shiptest"									[URL = "https://foo.bar.example/codecraphere"]
+		"Sigma"										[URL = "https://foo.bar.example/codecraphere"]
+		"Skyrat 13 (Old)"							[URL = "https://foo.bar.example/codecraphere"]
+		"Skyrat Main"								[URL = "https://foo.bar.example/codecraphere"]
+		"Sosaki"									[URL = "https://foo.bar.example/codecraphere"]
+		"Soujurn Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Space Station V"							[URL = "https://foo.bar.example/codecraphere"]
+		"Stalker Project"							[URL = "https://foo.bar.example/codecraphere"]
+		"Star Trek 13"								[URL = "https://foo.bar.example/codecraphere"]
+		"Sunset Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Sygyzy Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"T/Goonstation"								[URL = "https://foo.bar.example/codecraphere"]
+		"Tannhauser Gate"							[URL = "https://foo.bar.example/codecraphere"]
+		"Tau Ceti"									[URL = "https://foo.bar.example/codecraphere"]
+		"Tegustation"								[URL = "https://foo.bar.example/codecraphere"]
+		"Tegustation (Old)"							[URL = "https://foo.bar.example/codecraphere"]
+		"TerraGov Marine Corps (TGMC)"				[URL = "https://foo.bar.example/codecraphere"]
+		"Toolbox Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Traitor Death Match"						[URL = "https://foo.bar.example/codecraphere"]
+		"Unbound Travels"							[URL = "https://foo.bar.example/codecraphere"]
+		"Urist McStation"							[URL = "https://foo.bar.example/codecraphere"]
+		"V.O.R.E. Station"							[URL = "https://foo.bar.example/codecraphere"]
+		"Vagabond Station 13"						[URL = "https://foo.bar.example/codecraphere"]
+		"Vestia"									[URL = "https://foo.bar.example/codecraphere"]
+		"WASTELANDS: Lost Day"						[URL = "https://foo.bar.example/codecraphere"]
+		"WaspStation"								[URL = "https://foo.bar.example/codecraphere"]
+		"White Bay"									[URL = "https://foo.bar.example/codecraphere"]
+		"White Dream"								[URL = "https://foo.bar.example/codecraphere"]
+		"White Sands"								[URL = "https://foo.bar.example/codecraphere"]
+		"World Server"								[URL = "https://foo.bar.example/codecraphere"]
+		"Yawn Wider"								[URL = "https://foo.bar.example/codecraphere"]
+		"Yellow"									[URL = "https://foo.bar.example/codecraphere"]
+		"Yellow (Old)"								[URL = "https://foo.bar.example/codecraphere"]
+		"YogStation"								[URL = "https://foo.bar.example/codecraphere"]
+		"YogStation (Old)"							[URL = "https://foo.bar.example/codecraphere"]
 	}
 }
 
